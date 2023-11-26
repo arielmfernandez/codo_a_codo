@@ -102,7 +102,7 @@ if (page === 'index') {
       <a href="#nuestros-productos">Nuestros Productos</a>
       <a href="./shoppingCart/shoppingCart.html">Pedidos</a>
       <a href="#footer">Contacto</a>
-      <a href="./customer/account/products_crud.html">Administracion</a>
+      <a href="./admin/products_crud.html">Administracion</a>
       <a href="./customer/account/login.html">Ingresar</a>
       <a href="./customer/account/create.html">Registrarse</a>
   </nav>
