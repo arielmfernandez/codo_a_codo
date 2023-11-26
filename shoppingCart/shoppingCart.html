@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Eugenio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
+    <style>
+        .tarjeta{
+         width: 25%;
+         border: 1px solid white;
+         border-radius: 5%;
+         margin: 40px;
+         object-fit: cover;
+         height: 60vh;
+         width: 45vh;
+         
+         
+         
+
+
+        }
+        div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            
+            
+            
+           
+            
+        }
+        #app{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+           
+        }
+
+        .tarjeta img{
+            
+            width: 90%;
+            height: 50%;
+            object-fit: cover;
+            margin: 2px;
+        }
+
+    </style>
+
+</head>
+<body data-page="shoppingCart">
+    <header>
+
+    </header>
+
+    <section id="nuestros-productos">
+        <div class="container">
+
+            <div id="app">
+
+                        
+                <div class="tarjeta" v-for="elemento in datos">
+                    <h3>ID:{{elemento.id}}</h3>
+                    <p>{{elemento.nombre}}</p>
+                    <p>{{elemento.descripcion}}</p>
+                    <img v-bind:src="elemento.foto" :alt="elemento.nombre">
+                </div>
+                </div>
+            
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+    </section>
+
+    <div class="style-shoppingCart">
+        
+    </div>
+
+    <!-- footer -->
+    <div section id="footer">
+
+    </div>
+
+    <!-- load javascript -->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/datos.json"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/apiProducts.js"></script>
+</body>
+</html>
+

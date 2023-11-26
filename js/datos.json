@@ -1,0 +1,61 @@
+{
+    "resultados": [
+        {
+            "id":1,
+            "nombre":"Morron",
+            "descripcion":"rojo",
+            "foto": "https://us.123rf.com/450wm/rmorijn/rmorijn1404/rmorijn140400025/27289217-el-cultivo-hidrop%C3%B3nico-de-pimientos-verdes-y-rojos-o-capsicum-annuum-en-un-invernadero-holand%C3%A9s.jpg"
+        },
+        {
+            "id":2,
+            "nombre":"Pepino",
+            "descripcion":"español",
+            "foto": "https://previews.123rf.com/images/rmorijn/rmorijn1504/rmorijn150400101/38969401-fila-de-plantas-trepadoras-de-pepino-que-crecen-en-sustrato-con-hidrop%C3%B3nico-en-invernadero-de-un.jpg"
+        },
+        {
+            "id":3,
+            "nombre":"Albahaca",
+            "descripcion":"limon",
+            "foto": "https://krosagro.com/wp-content/uploads/2021/03/como-cultivar-albahaca-hidroponica-en-4-sencillos-pasos.jpg"
+        },
+        {
+            "id":4,
+            "nombre":"Frutilla",
+            "descripcion":"camarosa",
+            "foto": "https://i.pinimg.com/736x/39/95/c8/3995c8d087491f0fa82a9d12b0777290.jpg"
+        },
+        {
+            "id":5,
+            "nombre":"Ajo",
+            "descripcion":"blanco",
+            "foto": "https://conocehidroponiapromuevehidroponia.files.wordpress.com/2014/09/cultivo-de-ajos.jpg"
+        },
+        {
+            "id":6,
+            "nombre":"Zanahoria",
+            "descripcion":"danvers",
+            "foto": "https://3.bp.blogspot.com/-3DFS9QPF9d8/VWXOUVpfvdI/AAAAAAAAAGQ/yD8uHXf6mjk/s1600/Zanahorias.jpg"
+        },
+        {
+            "id":7,
+            "nombre":"Brocoli",
+            "descripcion":"calabrese",
+            "foto": "https://4.bp.blogspot.com/-BV81IyhYiw0/W8jqPv0HN3I/AAAAAAAANlw/WIcmhUaXx4kaMXuNK6RwnTrMBK4_eUd-wCLcBGAs/s1600/hydroponic-brocolli.jpg"
+        },
+        {
+            "id":8,
+            "nombre":"Arandano",
+            "descripcion":"azul",
+            "foto": "https://inveurop.com/es/wp-content/uploads/sites/2/2021/05/Ara%CC%81ndanos-en-cultivos-hidropo%CC%81nicos.jpeg"
+        },
+        {
+            "id":9,
+            "nombre":"Tomillo",
+            "descripcion":"limonero",
+            "foto": "https://cdn-5fa32554c1ac19088c948b0e.closte.com/wp-content/uploads/2022/05/f608x342-20276_49999_9.jpg"
+        }
+        
+        ]  
+    
+    
+    }

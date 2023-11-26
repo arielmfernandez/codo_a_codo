@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Don Eugenio</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+  </head>
+<body class="login-page" data-page="login">
+	<header>
+    <img src="../../images/logo.jpg" alt="">
+  </header>
+
+  <section id="login">
+      <div class="containerLogin">
+        <div class="login">
+          <h3>Clientes registrados</h3>
+          <p>Si tiene una cuenta, inicie sesión con su dirección de correo electrónico.</p>
+          <form onsubmit="return validateLoginComplete();">
+            <label for="user">Correo electrónico:</label>
+            <input class="styled-input" id="user" type="text" name="user" value="" placeholder="Ingrese el mail con el que se encuentra registrado" onblur="validateUser()"> <br>
+            <div id="validateUser" style="color: red;">&nbsp;</div>
+            <label for="pass">Contraseña:</label>
+            <input class="styled-input" id="pass" type="password" name="pass" value="" placeholder="Ingrese la contraseña" onblur="validatePass()"> <br>
+            <div id="validatePass" style="color: red;">&nbsp;</div>
+            <div class="checkbox-option">
+              <!-- <input type="checkbox" id="showPass" name="showPass" value="show" onclick="showPassword()"> -->
+              <input type="checkbox" id="showPass" onclick="showPassword()">
+              <label for="showPass">Mostrar contraseña</label>
+            </div>
+            <div class="checkbox-option">
+              <input type="checkbox" id="rememberPass" name="rememberPass" value="remember">
+              <label for="rememberPass">Mantener sesion iniciada</label>
+            </div>
+            <p><a href="./forgotPassword.html">¿Olvidaste tu contraseña?</a></p>
+            <div>
+              <button type="submit">Ingresar</button>
+              <!-- <input type="submit" value="Ingresar"> -->
+            </div>
+          </form>
+          
+
+        </div>
+        <!-- <div id="loginMessage" class="hidden">¡Inicio de sesión exitoso!</div> -->
+        <div class="register">
+          <h3>Nuevos Clientes</h3>
+          <p>Crear una cuenta tiene muchos beneficios: Paga más rápido, puede guardar más de una dirección, seguimiento de pedidos, acceder a descuentos y promociones especiales y muchos beneficios más.</p>
+          <div>
+            <button onclick="goToRegister()">Registrarse</button>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <div section id="footer">
+
+  </div>
+
+
+    <!-- load javascript -->
+      <script src="../../js/main.js"></script>
+      <script src="../../js/validate.js"></script>
+</body>
+</html>

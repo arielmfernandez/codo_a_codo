@@ -1,0 +1,1218 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container img{
+  width: 120px;
+  height: 110px;
+  margin-left: 15px;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.6em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.20em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+#button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+  }
+
+button{
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: white;
+  background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+#button:hover{
+  background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:blueviolet; }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: linear-gradient(
+        0deg,        
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    )
+        
+    ,url("../images/Lechuga\ Francesa.jpeg");
+    /* ,url("Lechuga\ ../images/Francesa.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#acuaponia .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-productos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-productos .container{
+    padding: 150px 12px;
+
+    
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+
+    
+}
+
+/* estilo original tarjetas home */
+
+/* .carta1:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../images/Trucha.jpg");
+
+}
+
+.carta2:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("../images/Tomate\ Cherry.jpeg");
+}
+
+.carta3:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("../images/Lechuga\ Francesa.jpeg");
+
+} */
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+   
+
+    
+}
+
+#final .acuaponiaimg{
+  display: flex;
+  width: 300px;
+  margin: 10px;
+ }
+ 
+ #final .acuaponiavid{
+   display: flex;
+   width: 300px;
+   margin:10px
+  }
+ 
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 4vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #acuaponia .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #final .acuapo{
+      display:inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-items: center;
+    }
+    #final .acuaponiaimg{
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      height: 400px;
+      margin:10px
+     }
+     
+     #final .acuaponiavid{
+       display: flex;
+       width: 500px;
+       height: 400px;
+       margin:10px
+      }
+
+    #acuaponia .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #acuaponia h2{
+        margin-top: 0px;
+    }
+
+    #acuaponia .img-container{
+        background-image: url("../images/Plantines.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #nuestros-productos .productos{
+        display: flex;
+        justify-content: center;
+
+        
+    }
+
+    #nuestros-productos p{
+        display: block;
+        margin-bottom: 30px;
+
+       
+    }
+
+    #nuestros-productos h2{
+        font-size: 4em;
+    }
+
+    #nuestros-productos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta{
+        padding: 80px;
+        background-size: 100% 350px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        margin-top: 100x;
+        width: 90%;
+        height: 400px;
+        object-fit: cover;
+
+        
+    }
+
+/* estilo original tarjetas home */
+
+    /* .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../images/Trucha.jpg");     
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../images/Tomate\ Cherry.jpeg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../images/Lechuga\ Francesa.jpeg");
+    } */
+
+    #caracteristicas{
+        background-image: url "media/background-2.jpeg";
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final{
+        margin-top: 200px;
+    }
+
+
+    #final button{
+        font-size: 2em;
+    }
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+}
+   /* estilo footer */
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+#footer {
+    height: 100%;
+    margin: 0;
+    /* font-family: "Euclid Circular A", "Poppins"; */
+    font-family: 'Roboto', sans-serif; /* me tome el atrevimiento de cambiar la tipografia por la que uso Fausto para todo el sitio */
+    width: 100%;
+    background-color: rgb(245,245,245);
+  }
+  
+  footer ul{ list-style: disc;}
+  footer li{ font-size: 1em;}
+
+  footer {
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: rgb(245,245,245);
+    }
+  
+  footer.top {
+    display: grid;
+    border-bottom: 2px solid rgb(255 255 255 / 20%);
+    padding-bottom: 10px;
+    color: black;
+  }
+  
+  footer.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  
+  footer.top .links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .links-column {
+    display: grid;
+    text-align: start;
+    justify-content: center;
+  }
+  
+  footer h3 {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  footer h4 {
+    margin: 0 0 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+  }
+  footer h5 {
+    margin: 0;
+  }
+
+  footer a{
+
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+footer a:hover{
+    color: blueviolet;
+}
+  
+
+  .legal,
+  .copyright {
+    font-size: 12px;
+  }
+  
+  .legal > span {
+    margin-right: 10px;
+  }
+  
+  footer.top .socials {
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 56px;
+  }
+  
+  footer.top .socials > a {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .socials-column h5{
+    display: none;
+  }
+  
+  @media (min-width: 850px) {
+
+    footer {
+      margin: 0 auto;
+      max-width: 500px;
+      padding-top: 20px;
+    }
+    footer.top .socials {
+      position: static;
+    }
+
+    footer h3 {
+      text-align: center;
+    }
+  
+    footer.top .links {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    footer.bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 10px;
+      text-align: center;
+      align-content: center;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    footer.top .socials {
+      left: 0;
+      translate: 0;
+    }  
+    .socials-column h5 {
+      display: flex;
+    } 
+
+    footer ul{ list-style: disc;
+        margin-left: 0;     
+        margin-top: 0;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    footer {
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 20px;
+    }
+  
+    footer.top .links {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    footer.top .socials {
+      position: static;
+    }
+  
+    footer.bottom {
+      justify-content: center;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    footer h3 {
+        text-align: center;
+      }
+
+    .socials-column :is(h3, h6) {
+      display: block;
+    }
+    footer ul{ list-style: disc;
+        margin-left: 0;     
+        margin-top: 0;
+    }
+  }
+
+  /* termina el footer*/
+
+/* cambio de estilo de las tarjetas del home nuestros productos para animacion */
+
+/* .productos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) { 
+  .productos-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} */
+
+    .carta {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+    }
+    
+    .carta .overlay {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: bottom 0.5s;
+    }
+    .carta:hover .nombre{
+      display:none
+    }
+    .carta:hover .overlay {
+      bottom: 0;
+    }
+    
+    /* .carta .title {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      margin: 0;
+      padding: 10px 0;
+    } */
+    
+    .carta .title {
+      position: absolute;
+      bottom: 0; /* Cambia esta línea */
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      margin: 0;
+      padding: 10px 0;
+    }
+    
+    #carta1 {
+      background-image: url('../images/Trucha.jpg');
+      background-position: center bottom;
+      background-size: cover; /* Añade esta línea */
+      
+    }
+    
+    #carta2 {
+      background-image: url('../images/Tomate\ Cherry.jpeg');
+      background-position: center bottom;
+     
+    }
+    
+    #carta3 {
+      background-image: url('../images/Lechuga\ Francesa.jpeg');
+      background-position: center bottom;
+     
+    }
+    
+  
+    #login .img-container{
+      background-image: url("../images/Plantines.jpeg");
+      background-size: cover;
+      background-position: center center;
+      height: 350px;
+      width: 400px; 
+  }
+
+
+
+.containerLogin {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* .visible {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+
+#loginMessage {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  
+  #loginMessage.visible {
+    opacity: 1;
+  }
+  
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  } */
+
+.login, .register {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    background-color: #e9fbfb;
+    color: #0062e1;
+}
+
+.styled-input {
+  background-color: lightgray; 
+  color: #333; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  width: 75%; 
+  box-sizing: border-box; 
+  margin-bottom: 10px; 
+  outline: none; 
+  box-shadow: 0 0 5px grey; 
+}
+
+
+
+
+
+  .checkbox-option input[type="checkbox"] {
+    
+    margin: 0;
+    
+  }
+
+h3 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+
+h3 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.login-page .containerLogin {
+
+
+.containerLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+
+.login {
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login h3 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.styled-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.styled-input:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-option input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.checkbox-option label {
+  font-size: 14px;
+  color: #666;
+}
+
+.login a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}}
+
+/* style create.html */
+
+.form-field {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  width: 175px;
+}
+
+.form-field input {
+  flex: 1;
+  border-radius: 5px; 
+  background-color: #f2f2f2;
+}
+
+.form-field input:hover,
+.form-field input:focus {
+    border: 2px solid blueviolet;
+    outline: none;
+}
+
+.required {
+  color: red;
+  font-size: 16px;
+}
+
+.required-text {
+  font-size: 16px;
+}
+
+.tax-text {
+  font-size: 16px;
+}
+
+input[type="radio"], select {
+  font-size: 16px;
+}
+
+.invalid {
+  border: 2px solid red;
+  box-shadow: 0 0 5px red;
+}
+
+.create-segment {
+  font-size: 16px;
+  color: red  ;
+}
+
+.wpassword-strength input {
+  margin-bottom: 10px;
+}
+
+.password-strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#strengthText {
+  font-size: 12px;
+  color: gray;
+  margin-left: 10px;
+}
+
+#strengthBar {
+  /* height: 5px; */
+  border-radius: 5px;
+}
+
+#strengthBar.very-weak {
+  background: red;
+}
+
+#strengthBar.weak {
+  background: orange;
+}
+
+#strengthBar.medium {
+  background: yellow;
+}
+
+#strengthBar.strong {
+  background: green;
+}
+
+/* la ultima prueba para el color de la barra */
+
+progress {
+  height: 7.5px; 
+  width: 35%; 
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 5px; /* Asegura que el contenedor de la barra de progreso también tenga los bordes redondeados en navegadores WebKit */
+}
+
+progress::-webkit-progress-value {
+  border-radius: 5px; /* Asegura que la barra de progreso tenga los bordes redondeados en navegadores WebKit */
+}
+
+progress::-moz-progress-bar {
+  border-radius: 5px; /* Asegura que la barra de progreso tenga los bordes redondeados en Firefox */
+}
+
+.progress-red::-webkit-progress-value {
+  background-color: red;
+}
+.progress-red::-moz-progress-bar {
+  background-color: red;
+}
+.progress-orange::-webkit-progress-value {
+  background-color: orange;
+}
+.progress-orange::-moz-progress-bar {
+  background-color: orange;
+}
+.progress-yellow::-webkit-progress-value {
+  background-color: yellow;
+}
+.progress-yellow::-moz-progress-bar {
+  background-color: yellow;
+}
+.progress-limegreen::-webkit-progress-value {
+  background-color: limegreen;
+}
+.progress-limegreen::-moz-progress-bar {
+  background-color: limegreen;
+}
+.progress-green::-webkit-progress-value {
+  background-color: green;
+}
+.progress-green::-moz-progress-bar {
+  background-color: green;
+}
+
+#registerButton {
+  margin-top: 20px; /
+}
+/* para reubicar mejor  */
+
+.containerCreate {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.customerInfo {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  
+}
+
+.customerData {
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 100px; */
+}
+
+.customerForm {
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 50px; */
+  column-count: 2;
+}
+
+.customerTax {
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+  margin-top: 25px;
+}
+
+.customer-segment {
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+  margin-bottom: 25px;
+}
+
+.sessionInfo {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
+}
+
+/* style forgotPassword.html */
+
+.containerForgot {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.forgotPassword {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+}
+
+/* style shoppingCart.html */
+
+ 
+
+
+/* Boton de Whatsapp Web */
+
+.btn-wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 63px;
+  bottom:25px;
+  right:25px;
+  background:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:35px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover{
+  background: #20ba5a;
+  color: #FFF;
+}
+
+/* formulario de registro responsive */
+
+@media (min-width: 1200px) {
+  .form-field {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  .form-field label {
+    width: 175px;
+  }
+  .form-field input {
+    flex: 1;
+    border-radius: 5px; 
+    background-color: #f2f2f2;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .form-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .form-field label {
+    width: 150px;
+  }
+  .form-field input {
+    flex: 1;
+    border-radius: 5px; 
+    background-color: #f2f2f2;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-field {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .form-field label {
+    width: 100%;
+  }
+  .form-field input {
+    width: 100%;
+    border-radius: 5px; 
+    background-color: #f2f2f2;
+  }
+}
