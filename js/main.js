@@ -100,11 +100,11 @@ if (page === 'index') {
   <nav>
       <a href="#acuaponia">Quienes Somos</a>
       <a href="#nuestros-productos">Nuestros Productos</a>
-      <a href="./shoppingCart/shoppingCart.html">Pedidos</a>
+      <a href="./frontend/shoppingCart.html">Pedidos</a>
+      <a href="./frontend/productos.html">Productos</a>
       <a href="#footer">Contacto</a>
-      <a href="./admin/products_crud.html">Administracion</a>
       <a href="./customer/account/login.html">Ingresar</a>
-      <a href="./customer/account/create.html">Registrarse</a>
+      <a href="./frontend/registrocliente.html">Registrarse</a>
   </nav>
   </div>
   `;
@@ -142,10 +142,21 @@ if (page === 'index') {
     </nav>
   </div>
   `;
+} else if (page === 'registrocliente') {
+  cad = `
+  <div class="container">
+  <img src="../images/logo.jpg" alt="">
+    <nav>
+    <a href="../index.html">Pagina principal</a>
+    <a href="../index.html#footer">Contacto</a>
+    <a href="../customer/account/login.html">Ingresar</a>
+    </nav>
+  </div>
+  `;
 } else if (page === 'shoppingCart') {
   cad = `
   <div class="container">
-  <img src="../../images/logo.jpg" alt="">
+  <img src="../images/logo.jpg" alt="">
   <nav>
       <a href="../index.html">Pagina principal</a>
       <a href="../index.html#nuestros-productos">Nuestros Productos</a>
@@ -155,14 +166,27 @@ if (page === 'index') {
   </nav>
   </div>
   `;
+} else if (page === 'productos') {
+  cad = `
+  <div class="container">
+   <img src="../images/logo.jpg" alt="">
+     <nav>
+       <a href="../index.html">Pagina principal</a>
+       <a href="../index.html#nuestros-productos">Nuestros Productos</a>
+       <a href="../index.html#footer">Contacto</a>
+       <a href="../customer/account/login.html">Ingresar</a>
+       <a href="../customer/account/create.html">Registrarse</a>
+     </nav>
+  </div>
+  `;
 }
 
-document.querySelector("header").innerHTML=cad;
+document.querySelector("header").innerHTML = cad;
 
 // footer
 
 
-cad=`
+cad = `
 <footer class="top">
           <div class="links">
             <div class="links-column">
@@ -196,7 +220,7 @@ cad=`
           </div>
         </footer>
 `
-document.querySelector("#footer").innerHTML=cad
+document.querySelector("#footer").innerHTML = cad
 
 // animacion trajetas
 
@@ -215,7 +239,7 @@ cartas.forEach(carta => {
     let overlay = carta.querySelector('.overlay');
     let title = carta.querySelector('.title');
     overlay.style.bottom = '-100%';
-    carta.style.backgroundPosition = 'center bottom'; 
-    title.style.opacity = '1'; 
+    carta.style.backgroundPosition = 'center bottom';
+    title.style.opacity = '1';
   });
 });
