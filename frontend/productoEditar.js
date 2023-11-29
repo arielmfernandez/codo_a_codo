@@ -21,8 +21,8 @@ const { createApp } = Vue
                 .then(data => {
                     console.log(data)
                     this.id=data.id
-                    this.nombre = data.nombre
-                    this.descripcion = data.descripcion
+                    this.nombre=data.nombre
+                    this.descripcion=data.descripcion
                     this.imagen=data.imagen
                     this.stock=data.stock
                     this.precio=data.precio                    
@@ -36,9 +36,9 @@ const { createApp } = Vue
             let producto = {
                 nombre:this.nombre,
                 descripcion:this.descripcion,
-                precio: this.precio,
-                stock: this.stock,
-                imagen: this.imagen
+                precio:this.precio,
+                stock:this.stock,
+                imagen:this.imagen
             }
             var options = {
                 body: JSON.stringify(producto),

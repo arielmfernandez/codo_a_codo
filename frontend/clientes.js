@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             clientes: [],
-            url: 'http://127.0.0.1:5000/clientes',
+            url: 'https://martinezre.pythonanywhere.com/clientes',
             error: false,
             cargando: true,
             dni:0,
@@ -43,7 +43,7 @@ createApp({
                 })
         },
         eliminar(cliente) {
-            const url = 'http://localhost:5000/clientes/' + cliente;
+            const url = 'https://martinezre.pythonanywhere.com/clientes/' + cliente;
             var options = {
                 method: 'DELETE',
             }
