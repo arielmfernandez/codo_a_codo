@@ -162,7 +162,7 @@ if (page === 'index') {
       <a href="../index.html#nuestros-productos">Nuestros Productos</a>
       <a href="../index.html#footer">Contacto</a>
       <a href="../customer/account/login.html">Ingresar</a>
-      <a href="../customer/account/create.html">Registrarse</a>
+      <a href="../frontend/registrocliente.html">Registrarse</a>
   </nav>
   </div>
   `;
