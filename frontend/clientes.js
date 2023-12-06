@@ -3,8 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            clientes: [],
-            url: 'https://martinezre.pythonanywhere.com/clientes',
+            usuarios: [],
+            url: 'https://martinezre.pythonanywhere.com/usuarios',
             error: false,
             cargando: true,
             dni: 0,
@@ -45,7 +45,7 @@ createApp({
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    this.clientes = data;
+                    this.usuarios = data;
                     this.cargando = false
                 })
                 .catch(err => {
@@ -53,8 +53,8 @@ createApp({
                     this.error = true
                 })
         },
-        eliminar(cliente) {
-            const url = 'https://martinezre.pythonanywhere.com/clientes/' + cliente;
+        eliminar(usuario) {
+            const url = 'https://martinezre.pythonanywhere.com/usuarios/' + usuario;
             var options = {
                 method: 'DELETE',
             }
@@ -66,7 +66,7 @@ createApp({
         },
         grabar() {
             if (this.validar()) {
-                let cliente = {
+                let usuario = {
                     nombre: this.nombre,
                     apellido: this.apellido,
                     dni: this.dni,
@@ -81,7 +81,7 @@ createApp({
 
                 }
                 var options = {
-                    body: JSON.stringify(cliente),
+                    body: JSON.stringify(usuario),
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     redirect: 'follow'
