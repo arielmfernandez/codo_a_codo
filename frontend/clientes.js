@@ -78,7 +78,6 @@ createApp({
                     tel: this.tel,
                     direccion: this.direccion,
                     provincia: this.provincia,
-
                 }
                 var options = {
                     body: JSON.stringify(usuario),
@@ -103,4 +102,4 @@ createApp({
         created() {
             this.fetchData(this.url)
         },
-    }).mount('#app')
+    }}).mount('#app')

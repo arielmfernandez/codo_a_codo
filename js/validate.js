@@ -143,7 +143,7 @@ function validate_login(){
   }
   
   function goToRegister() {
-    window.location.href = "../../customer/account/create.html";
+    window.location.href = "../../frontend/registrocliente.html";
   }
   
   // validacion formularios create.html
