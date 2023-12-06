@@ -6,16 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Don Eugenio</title>
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+
+    
+	<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
 
 
 </head>
 
 <body data-page="registrocliente">
 	<header>
-
+		
 	</header>
 
 	<main>
@@ -28,8 +33,8 @@
 						<div class="customerForm">
 							<div class="form-field">
 								<label for="createName">Nombre <span class="required">(*)</span>:</label>
-								<input id="createName" type="text" name="createName" v-model="nombre"
-									placeholder="Ingrese su nombre..." required><br>
+								<input id="createName" type="text" name="createName" v-model="nombre" placeholder="Ingrese su nombre..."
+									required><br>
 							</div>
 							<div class="form-field">
 								<label for="createLastName">Apellido <span class="required">(*)</span>:</label>
@@ -38,12 +43,16 @@
 							</div>
 							<div class="form-field">
 								<label for="createDni">DNI <span class="required">(*)</span>:</label>
-								<input id="createDni" type="text" name="createDni" v-model="dni"
-									placeholder="Ingrese su DNI..." required><br>
+								<input id="createDni" type="text" name="createDni" v-model="dni" placeholder="Ingrese su DNI..."
+									required><br>
 							</div>
-
 							<div class="form-field">
-								<label for="createNameCompany">Razon Social <span class="required"></span>:</label>
+								<label for="createCuil">CUIL <span class="required">(*)</span>:</label>
+								<input id="createCuil" type="text" name="createCuil" v-model="cuil" placeholder="Ingrese su CUIT..."
+									required><br>
+							</div>
+							<div class="form-field">
+								<label for="createNameCompany">Razon Social <span class="required">(*)</span>:</label>
 								<input id="createNameCompany" type="text" name="createNameCompany" v-model="razonSocial"
 									placeholder="Ingrese el nombre de su empresa..." required><br>
 							</div>
@@ -57,118 +66,122 @@
 								<input id="createPhone" type="text" name="createPhone" v-model="tel"
 									placeholder="Ingrese su telefono de contacto..."><br>
 							</div>
-
-
 							<div class="form-field">
-								<label for="createNameAdress">Direccion <span class="required"></span>:</label>
+								<label for="createCellPhone">Celular <span class="required">(*)</span>:</label>
+								<input id="createCellPhone" type="text" name="createCellPhone" v-model="celular"
+									placeholder="Ingrese su Celular de contacto..." required><br>
+							</div>
+							<div class="form-field">
+								<label for="createMail">Correo electronico:</label>
+								<input id="createMail" type="text" name="createMail" v-model="mail"
+									placeholder="Ingrese su correo electronico..."><br>
+							</div>
+							<div class="form-field">
+								<label for="createNameAdress">Direccion <span class="required">(*)</span>:</label>
 								<input id="createNameAdress" type="text" name="createAdress" v-model="direccion"
 									placeholder="Ingrese su direccion..." required><br>
 							</div>
-							
-							<div class="customer-segment">
-								<form>
-	
-									<label for="create-segment">Provincia:</label>
-									<select id="opciones" name="opciones">
-										<option value="" disabled selected>Selecciona una opción</option>
-										<option value="opcion1">Buenos Aires</option>
-										<option value="opcion2">Catamarca</option>
-										<option value="opcion3">Chaco</option>
-										<option value="opcion4">Chubut</option>
-										<option value="opcion5">Cordoba</option>
-										<option value="opcion6">Corrientes</option>
-										<option value="opcion7">Entre Rios</option>
-										<option value="opcion8">Formosa</option>
-										<option value="opcion9">Jujuy</option>
-										<option value="opcion10">La Pampa</option>
-										<option value="opcion11">La Rioja</option>
-										<option value="opcion12">Mendoza</option>
-										<option value="opcion13">Misiones</option>
-										<option value="opcion14">Neuquen</option>
-										<option value="opcion15">Rio Negro</option>
-										<option value="opcion16">Salta</option>
-										<option value="opcion17">San Juan</option>
-										<option value="opcion18">San Luis</option>
-										<option value="opcion19">Santa Cruz</option>
-										<option value="opcion20">Santa Fe</option>
-										<option value="opcion21">Santiago del Estero</option>
-										<option value="opcion22">Tierra del Fuego</option>
-										<option value="opcion23">Tucuman</option>
-	
-									</select><br>
-								</form>
+							<div class="form-field">
+								<label for="createNumber">Numero:</label>
+								<input id="createNumber" type="text" name="createNumber" v-model="numero"
+									placeholder="Ingrese el numero..."><br>
 							</div>
-
-
+							<div class="form-field">
+								<label for="createFloor">Piso:</label>
+								<input id="createFloor" type="text" name="createFloor" v-model="piso"
+									placeholder="Ingrese el piso..."><br>
+							</div>
+							<div class="form-field">
+								<label for="createOffice">Departamento:</label>
+								<input id="createOffice" type="text" name="createOffice" v-model="departamento"
+									placeholder="Ingrese la oficcina o departamento..."><br>
+							</div>
+							<div class="form-field">
+								<label for="createPostalCode">Codigo Postal:</label>
+								<input id="createPostalCode" type="text" name="createPostalCode" v-model="codigoPostal"
+									placeholder="Ingrese el CP..."><br>
+							</div>
+							<div class="form-field">
+								<label for="createTown">Localidad:</label>
+								<input id="createTown" type="text" name="createTown" v-model="localidad"
+									placeholder="Ingrese su Localidad`..."><br>
+							</div>
+							<div class="form-field">
+								<label for="createCity">Ciudad:</label>
+								<input id="createCity" type="text" name="createCity" v-model="ciudad"
+									placeholder="Ingrese su Ciudad`..."><br>
+							</div>
+							<div class="form-field">
+								<label for="createState">Provincia:</label>
+								<input id="createState" type="text" name="createState" v-model="provincia"
+									placeholder="Ingrese su Provincia..."><br>
+							</div>
+							<div class="form-field">
+								<label for="createCountry">Pais:</label>
+								<input id="createCountry" type="text" name="createCountry" v-model="pais"
+									placeholder="Ingrese el Pais..."><br>
+							</div>
 						</div>
-						<div class="sessionInfo">
-							<form>
-								<legend>Informacion de inicio de sesion:</legend><br>
-								<label for="createUser">Correo electronico:</label>
-								<input id="createUser" type="text" name="createUser" v-model="mail"
-									placeholder="Ingrese el nombre de usuario..." onblur="validateCreateUser()"><br>
-								<div id="validateCreateUser" style="color: red;"></div>
-								<label for="createPass">Contraseña</label>
-								<input id="createPass" type="password" name="createPass" v-model="clave"
-									placeholder="Ingrese su contraseña..." oninput="checkPasswordStrength()"
-									onblur="validateCreatePass()"><br>
-								<div class="password-strength">
-									<!-- <input type="password" id="createPassword" oninput="checkPasswordStrength()"> -->
-									<progress max="4" value="0" id="strengthBar"></progress>
-									<p id="strengthText"></p>
-								</div>
-								<div id="validateCreatePass" style="color: red;"></div>
-								<label for="repeatPassword">Repetir contraseña:</label>
-								<input id="repeatPassword" type="password" name="repeatPassword" v-model="clave"
-									placeholder="Reingrese la contraseña..." onblur="validatePassword()"><br>
-								<div id="validatePassword" style="color: red;"></div>
-							</form>
-							<input type="checkbox" name="showPassCreate" value="show" onclick="showPasswordCreate()"> Mostrar
-							contraseña<br>
-				
+						<div>
+							<p><span class="required">(*)</span> <span class="required-text">estos campos son
+									obligatorios</span></p>
 						</div>
-
-						<br>
+						<div class="customerTax">
+							<legend>Condicion Impositiva:</legend>
+							<p class="tax-text">Seleccione su condicion ante el IVA:
+								<input type="radio" name="condicionIVA" value="responsableInscripto" checked>Responsable
+								inscripto
+								<input type="radio" name="condicionIVA" value="monotributista">Monotributista
+								<input type="radio" name="condicionIVA" value="consumidorFinal"> Consumidor final
+								<input type="radio" name="condicionIVA" value="excento"> Excento
+							</p><br>
+						</div>
 					</div>
-					
-			</div>
-			<div>
-				<p><span class="required">(*)</span> <span class="required-text">estos campos son
-						obligatorios</span></p>
-			</div>
-			<div class="customerTax">
-				<legend>Condicion Impositiva:</legend>
-				<p class="tax-text">Seleccione su condicion ante el IVA:
-					<input type="radio" name="condicionIVA" value="responsableInscripto" checked>Responsable
-					inscripto
-					<input type="radio" name="condicionIVA" value="monotributista">Monotributista
-					<input type="radio" name="condicionIVA" value="consumidorFinal"> Consumidor final
-					<input type="radio" name="condicionIVA" value="excento"> Exento
-				</p><br>
-			</div>
-		</div>
-		<div class="customer-segment">
-			<form>
+					<div class="customer-segment">
+						<form>
 
-				<label for="create-segment">Segmento:</label>
-				<select id="opciones" name="opciones">
-					<option value="" disabled selected>Selecciona una opción</option>
-					<option value="opcion1">Gastronomia</option>
-					<option value="opcion2">Distribuidor mayorista</option>
-					<option value="opcion3">Comercio retail</option>
-					<option value="opcion4">Individuos</option>
-				</select><br>
-			</form>
-		</div>
-		<input type="checkbox" name="subscribe" value="subscribe"> Suscribirse al boletin para recibir
-		noticias,
-		ofertas y promociones<br>
-		</form>
-		</div>
-
-		<div>
-			<button id="registerButton" v-on:click="grabar()" onclick="createUser()">Crear usuario</button>
-		</div>
+							<label for="create-segment">Segmento:</label>
+							<select id="opciones" name="opciones">
+								<option value="" disabled selected>Selecciona una opción</option>
+								<option value="opcion1">Gastronomia</option>
+								<option value="opcion2">Distribuidor mayorista</option>
+								<option value="opcion3">Comercio retail</option>
+								<option value="opcion4">Individuos</option>
+							</select><br>
+						</form>
+					</div>
+					<input type="checkbox" name="subscribe" value="subscribe"> Suscribirse al boletin para recibir
+					noticias,
+					ofertas y promociones<br>
+				</form>
+			</div>
+			<div class="sessionInfo">
+				<form>
+					<legend>Informacion de inicio de sesion:</legend><br>
+					<label for="createUser">Correo electronico:</label>
+					<input id="createUser" type="text" name="createUser" v-model="mail" placeholder="Ingrese el nombre de usuario..."
+						onblur="validateCreateUser()"><br>
+					<div id="validateCreateUser" style="color: red;">&nbsp;</div>
+					<label for="createPass">Contraseña</label>
+					<input id="createPass" type="password" name="createPass" v-model="clave" placeholder="Ingrese su contraseña..."
+						oninput="checkPasswordStrength()" onblur="validateCreatePass()"><br>
+					<div class="password-strength">
+						<!-- <input type="password" id="createPassword" oninput="checkPasswordStrength()"> -->
+						<progress max="4" value="0" id="strengthBar"></progress>
+						<p id="strengthText"></p>
+					</div>
+					<div id="validateCreatePass" style="color: red;">&nbsp;</div>
+					<label for="repeatPassword">Repetir contraseña:</label>
+					<input id="repeatPassword" type="password" name="repeatPassword" v-model="clave" placeholder="Reingrese la contraseña..."
+						onblur="validatePassword()"><br>
+					<div id="validatePassword" style="color: red;">&nbsp;</div>
+				</form>
+				<input type="checkbox" name="showPassCreate" value="show" onclick="showPasswordCreate()"> Mostrar
+				contraseña<br>
+				<div>
+					<button id="registerButton" v-on:click="grabar()" onclick="createUser()">Crear usuario</button>
+				</div>
+			</div>
 	</main>
 
 	<!-- footer -->
@@ -176,21 +189,21 @@
 
 	</div>
 
-	<!-- Bootstrap JavaScript Libraries -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-		</script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-		integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-		</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
 
 	<!-- load javascript -->
 	<script src="../js/main.js"></script>
 	<script src="../js/validate.js"></script>
-	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--enlace traido de vuejs.org-->
-	<script src="./clientes.js"></script>
-
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--enlace traido de vuejs.org-->
+    <script src="./clientes.js"></script>
+	
 </body>
 
 </html>

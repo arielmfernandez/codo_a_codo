@@ -3,49 +3,38 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            usuarios: [],
-            url: 'https://martinezre.pythonanywhere.com/usuarios',
+            clientes: [],
+            url: 'https://martinezre.pythonanywhere.com/clientes',
             error: false,
             cargando: true,
-            dni: 0,
-            tel: 0,
-            nombre: "",
-            apellido: "",
-            mail: "",
-            usuario: "",
-            clave: "",
-            razonSocial: "",
-            direccion: "",
-            provincia: "",
-            cuit: "",
-
+            dni:0,
+            tel:0,
+            celular:0,
+            numero:0,
+            piso:0,
+            departamento:0,
+            codigoPostal:0,
+            nombre:"",
+            apellido:"",
+            mail:"",
+            usuario:"",
+            clave:"",
+            razonSocial:"",
+            direccion:"",
+            localidad:"",
+            ciudad:"",
+            provincia:"",
+            pais:"",
+            cuit:"",
+            cuil:""
         }
     },
     methods: {
-        validar() {
-            let usuario = document.getElementById("createUser");
-            let clave = document.getElementById("createPass");
-            let error = false;
-      
-            document.getElementById("validateCreateUser").innerHTML = " ";
-            document.getElementById("validateCreatePass").innerHTML = " ";
-            if (usuario.value == "") {
-              document.getElementById("validateCreateUser").innerHTML = "Completar";
-              error = true;
-              usuario.focus();
-            }
-            if (clave.value.length < 8) {
-              document.getElementById("validateCreatePass").innerHTML = "Completar";
-              error = true;
-              clave.focus();
-            }
-            return !error;
-        },
         fetchData(url) {
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    this.usuarios = data;
+                    this.clientes = data;
                     this.cargando = false
                 })
                 .catch(err => {
@@ -53,8 +42,8 @@ createApp({
                     this.error = true
                 })
         },
-        eliminar(usuario) {
-            const url = 'https://martinezre.pythonanywhere.com/usuarios/' + usuario;
+        eliminar(cliente) {
+            const url = 'https://martinezre.pythonanywhere.com/clientes/' + cliente;
             var options = {
                 method: 'DELETE',
             }
@@ -65,41 +54,47 @@ createApp({
                 })
         },
         grabar() {
-            if (this.validar()) {
-                let usuario = {
-                    nombre: this.nombre,
-                    apellido: this.apellido,
-                    dni: this.dni,
-                    mail: this.mail,
-                    usuario: this.usuario,
-                    clave: this.clave,
-                    razonSocial: this.razonSocial,
-                    cuit: this.cuit,
-                    tel: this.tel,
-                    direccion: this.direccion,
-                    provincia: this.provincia,
-                }
-                var options = {
-                    body: JSON.stringify(usuario),
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    redirect: 'follow'
-                }
-                fetch(this.url, options)
-                    .then(function () {
-                        alert("Registro grabado")
-                        window.location.href = "./registrocliente.html";  // recarga clientes.html
-                    })
-                    .catch(err => {
-                        console.error(err);
-                        alert("Error al Grabar")  // puedo mostrar el error tambien
-                    })
-            } else {
-                alert("Por favor, completa los campos correctamente.");
+            let cliente = {
+                nombre:this.nombre,
+                apellido:this.apellido,
+                dni:this.dni,
+                mail:this.mail,
+                usuario:this.usuario,
+                clave:this.clave,
+                cuil:this.cuil,
+                razonSocial:this.razonSocial,
+                cuit:this.cuit,
+                tel:this.tel,
+                celular:this.celular,
+                direccion:this.direccion,
+                numero:this.numero,
+                piso:this.piso,
+                departamento:this.departamento,
+                codigoPostal:this.codigoPostal,
+                localidad:this.localidad,
+                ciudad:this.ciudad,
+                provincia:this.provincia,
+                pais:this.pais
             }
-        },
+            var options = {
+                body:JSON.stringify(cliente),
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                redirect: 'follow'
+            }
+            fetch(this.url, options)
+                .then(function () {
+                    alert("Registro grabado")
+                    window.location.href = "./registrocliente.html";  // recarga clientes.html
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert("Error al Grabar")  // puedo mostrar el error tambien
+                })      
+        }
+    },
 
-        created() {
-            this.fetchData(this.url)
-        },
-    }}).mount('#app')
+    created() {
+        this.fetchData(this.url)
+    },
+}).mount('#app')
