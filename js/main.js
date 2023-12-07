@@ -100,11 +100,11 @@ if (page === 'index') {
   <nav>
       <a href="#acuaponia">Quienes Somos</a>
       <a href="#nuestros-productos">Nuestros Productos</a>
-      <a href="./frontend/shoppingCart.html">Pedidos</a>
+      <a href="./frontend/shoppingCart2.html">Pedidos</a>
       <a href="./frontend/productos.html">Productos</a>
       <a href="#footer">Contacto</a>
       <a href="./customer/account/login.html">Ingresar</a>
-      <a href="./frontend/registrocliente.html">Registrarse</a>
+      <a href="./frontend/altausuario.html">Registrarse</a>
   </nav>
   </div>
   `;
@@ -162,7 +162,7 @@ if (page === 'index') {
       <a href="../index.html#nuestros-productos">Nuestros Productos</a>
       <a href="../index.html#footer">Contacto</a>
       <a href="../customer/account/login.html">Ingresar</a>
-      <a href="../frontend/registrocliente.html">Registrarse</a>
+      <a href="../frontend/altausuario.html">Registrarse</a>
   </nav>
   </div>
   `;
